@@ -1,0 +1,124 @@
+@media screen and (max-width:767px) {
+
+  /* 画面サイズがiPadサイズ（７６８px)以下の場合に適用 */
+
+
+header {
+ font-size: 1.5em;
+}
+
+  .content-list {
+    width: 100vw;
+    margin: 0 auto;
+    float: none;
+  }
+
+  .content-list li {
+    position: relative;
+    float: none;
+    height: 400px;
+  }
+
+  .content-list li .list-txt {
+    width: 300px;
+    height: 400px;
+    top:0;
+  }
+
+  .content-list li .list-txt {
+    left: 300px;
+    background-color: darkgray;
+    text-align: center;
+  }
+
+  .content-list li:nth-child(odd) .list-txt {
+    left: -300px;
+    background-color: black;
+    color: white;
+  }
+
+  .content-list li .list-txt h2 {
+
+    margin-top: 180px;
+  }
+
+  .content-list li a img {
+    width: 600px;
+    display: block;
+  }
+
+  .content-list li:nth-child(even) img {
+    position: absolute;
+    right: 0;
+  }
+
+  .content-list li .popular {
+    right: 8px;
+  }
+
+/* サイドバー部分 */
+  .sidebar-top {
+    width: 100%;
+    margin-top: 50px;
+  }
+
+  .sidebar .profile .profile-text p{
+    font-size: 15px;
+  }
+
+  .sidebar .profile .profile-text a {
+    font-size: 15px;
+  }
+
+  .sidebar .profile .follow-me  {
+    height: 180px;
+    padding-top: 30px;
+  }
+
+  .sidebar .profile .follow-me p {
+    font-size: 30px;
+  }
+
+  .sidebar-top .profile .follow-me ul .sp-icon-size {
+    font-size: 5em;
+    margin: 0 30px;
+  }
+
+  .recent-post{
+    display: none;
+  }
+
+  .logo-content {
+    display: none;
+  }
+
+  /* フッター部分 */
+footer {
+  width: 960px;
+  font-size: 2.5em;
+}
+
+footer .content {
+}
+
+  footer .content .footer-menu section {
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    line-height: 3;
+  }
+
+  footer .content .footer-menu section:nth-child(2) {
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+
+  }
+
+  footer .copyright {
+    margin-top: 20px;
+  }
+
+}
