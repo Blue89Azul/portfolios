@@ -75,10 +75,12 @@
 
   #wrap .content .site-left .content-list {
     float: none;
+    width: 100%;
   }
 
   #wrap .content .site-left .content-list li {
     float: none;
+    margin: 15px auto;
   }
 
   .sidebar {
