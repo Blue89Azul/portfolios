@@ -3,6 +3,8 @@
   /* 画面サイズがiPhonサイズ（480px)以下の場合に適用 */
   #index {
     font-size: 3.5vw;
+    width: 100vw;
+    margin: auto;
   }
 
   h1 {
@@ -14,7 +16,7 @@
   }
 
   header {
-    width: auto;
+    width: 100%;
   }
 
   header h1 {
@@ -23,7 +25,7 @@
 
   header h1 span {
     font-size: 10vw;
-    margin: 0 35px;
+    margin: 0 60px;
   }
 
   .global-nav .sp-menu {
@@ -67,10 +69,11 @@
 
   .global-nav .invisible {
     display: none;
+    height: 100vh;
   }
 
   #wrap {
-    width: 100vw;
+    width: 100%;
   }
 
   #wrap .content .site-left .content-list {
@@ -91,6 +94,10 @@
     width: 100vw;
     height: 520px;
     float: none;
+  }
+
+  .sidebar .profile .follow-me {
+    height: 140px;
   }
 
   .sidebar .profile .follow-me ul .icon {
@@ -115,12 +122,17 @@
     margin: 0;
   }
 
+  footer .content {
+    width: 100%;
+  }
+
   footer .content .logo-content {
     display: none;
   }
 
   footer .content .footer-menu {
     float: none;
+    width: 100%;
   }
 
   footer .content .footer-menu .sections {
