@@ -13,7 +13,7 @@ $(function() {
   }
 
   function menuStyle(){
-    if($(this).scrollTop() > 100){
+    if($(this).scrollTop() > 50){
       $(".sp-menu").addClass("sp-menu-style");
     } else {
       $(".sp-menu").removeClass("sp-menu-style");
