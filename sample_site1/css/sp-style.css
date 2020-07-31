@@ -31,15 +31,26 @@
 
   /* スマホメニューの開閉クラス */
   .global-nav .sp-menu {
-    position: absolute;
+    position: fixed;
+    padding: 10px;
+    z-index: 50;
     top: 5%;
     right: 10%;
     width: auto;
     margin: 0 auto;
     display: block;
-    background-color: transparent;
+    background-color: white;
     border: none;
+    border-radius: 1%;
   }
+
+  .global-nav .sp-menu-style {
+    background-color: white;
+    border: 1px solid darkgray;
+
+    border-radius: 30%;
+  }
+
 
   .global-nav .sp-menu span {
     background-color: black;
@@ -90,7 +101,7 @@
     top: 0;
     right: 0;
     opacity: 1;
-    z-index: 20;
+    z-index: 100;
   }
 
   #wrap {
