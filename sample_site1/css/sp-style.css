@@ -2,6 +2,7 @@
 
   /* 画面サイズがiPhonサイズ（480px)以下の場合に適用 */
   #index {
+    display: block;
     font-size: 3.5vw;
     width: 100vw;
     margin: auto;
@@ -28,7 +29,11 @@
     margin: 0 60px;
   }
 
+  /* スマホメニューの開閉クラス */
   .global-nav .sp-menu {
+    position: absolute;
+    top: 5%;
+    right: 10%;
     width: auto;
     margin: 0 auto;
     display: block;
@@ -52,9 +57,10 @@
     font-size: 1.5em;
     display: block;
     margin-bottom: 10px;
+    padding-right: 10px;
   }
 
-  .global-nav ul li:last-child {
+  .global-navul li:last-child {
     margin-bottom: 0;
   }
 
@@ -67,9 +73,24 @@
     margin-top: 30px;
   }
 
-  .global-nav .invisible {
-    display: none;
+  .global-nav .sp-menu-items {
+    display: block;
+    margin: 0;
+    background-color: cornsilk;
+    position: fixed;
     height: 100vh;
+    transform: translateX(150px);
+    overflow: hidden;
+    opacity: 0;
+  }
+
+  .global-nav .sp-menu-items-open {
+    transition: all 0.5s;
+    transform: translateX(0);
+    top: 0;
+    right: 0;
+    opacity: 1;
+    z-index: 20;
   }
 
   #wrap {

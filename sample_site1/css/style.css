@@ -44,7 +44,7 @@ header h1 span {
   opacity: 0;
 }
 
-.global-nav ul li:hover::after {
+.global-nav ul li:hover:after {
   content: "";
   display: block;
   transform: translateY(0);

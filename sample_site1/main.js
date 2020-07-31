@@ -1,7 +1,14 @@
 $(function() {
-  $("button.sp-menu").click(menu_open);
+  // スマホメニュー開閉
+  $(".sp-menu").on("click", addClass);
+  $(".sp-menu-items").on("click", removeClass);
 
-  function menu_open() {
-    $(".global-nav ul.invisible").slideToggle("quick");
+  function addClass() {
+    $(".sp-menu-items").addClass("sp-menu-items-open");
   }
+
+  function removeClass() {
+    $(".sp-menu-items").removeClass("sp-menu-items-open");
+  }
+
 });
