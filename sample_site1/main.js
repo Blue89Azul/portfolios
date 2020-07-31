@@ -1,6 +1,6 @@
 $(function() {
   // スマホメニュー開閉
-  $(".sp-menu").on("mouseover", addClass);
+  $(".sp-menu").on("click", addClass);
   $(".sp-menu-items").on("click", removeClass);
   $(window).scroll(menuStyle);
 
